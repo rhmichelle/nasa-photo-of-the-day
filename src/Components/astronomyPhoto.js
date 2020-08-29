@@ -9,9 +9,9 @@ const AstronomyPhoto = props => {
 
     useEffect(() => {
         axios
-            .get("https://api.nasa.gov/planetary/apod?api_key=8cAcAkagEaja2vNbd0NHtNNSKgwia4rLBiB6RLac")
+            .get("https://api.nasa.gov/planetary/apod?api_key=YJFlE3M4RUi0LXHEKyH7icrOqQQajSXEEs9CnGfh&date=2020-08-18")
             .then((response) => {
-                console.log("Response", response.data)
+                console.log("Response", response)
                 setPhoto(response.data)
             })
             .catch((error) => {
